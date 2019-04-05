@@ -1,8 +1,7 @@
-package com.example
+package com.wp
 
-import com.example.UserRegistryActor.ActionPerformed
+import com.wp.UserRegistryActor.ActionPerformed
 
-//#json-support
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
 import spray.json.DefaultJsonProtocol
 
@@ -15,4 +14,3 @@ trait JsonSupport extends SprayJsonSupport {
 
   implicit val actionPerformedJsonFormat = jsonFormat1(ActionPerformed)
 }
-//#json-support
