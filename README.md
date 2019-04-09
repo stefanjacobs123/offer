@@ -31,7 +31,6 @@ Keep appropriate HTTP Status Codes in mind.
 
 - All offers can be created if the Create Offer request is error-free (JSON not malformed for instance)
   - Create ID for offer when Create Offer request is received.
-  - Do not check for duplicate offers.
   - Assume expiryDate is in the future (not in the past). Simplification.
 - When an offer has expired, it does not get removed/deleted.
 - To Cancel an offer, update the expiry date of the Offer. Simplification.
