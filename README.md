@@ -104,6 +104,13 @@ Keep appropriate HTTP Status Codes in mind.
     # 404 = Not Found
     ```
 
+## Docker 
+
+1. `sbt docker:publishLocal`
+2. `docker run -d -p 8080:8080 offer:0.1.0`
+
+The same queries as laid out in section `Local Sanity Testing -> Typical Process` can now be used.
+
 ## Improvements
 
 1. Would ideally keep REST Request and Response isolated from Actor Commands and Responses. Can then keep implementation
